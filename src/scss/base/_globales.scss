@@ -1,0 +1,42 @@
+@use "base/variables" as v;
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px
+}
+* {
+  box-sizing: inherit;
+  transition: all 0.3s linear;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: v.$fuente-montserrat;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+h4 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+img{
+    width: 20rem;
+}

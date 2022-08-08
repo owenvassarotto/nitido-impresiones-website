@@ -1,0 +1,20 @@
+@mixin telefono {
+    @media (max-width: 450px){ //esto significa que se aplica desde los 0px hasta los 450px
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: 768px){
+        @content;
+    }
+}
+@mixin escritorio {
+    @media (max-width: 991px){
+        @content;
+    }
+}
+@mixin escritorioXL {
+    @media (max-width: 1200px){
+        @content;
+    }
+}
