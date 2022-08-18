@@ -2,5 +2,122 @@
 @use "base/mixins" as m;
 
 .opiniones {
- 
+  position: relative;
+  min-height: 65vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 0;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 1rem;
+    margin-bottom: 8rem;
+
+    &::after {
+      content: "";
+      background: v.$negro;
+      display: block;
+      height: 0.2rem;
+      width: 30rem;
+      margin: 1.5rem auto 0.5rem;
+    }
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4rem;
+    row-gap: 8rem;
+    flex-wrap: wrap;
+
+    .container {
+      position: relative;
+      width: 35rem;
+      padding: 3rem 2rem;
+      border-radius: 0.3rem;
+      background-color: v.$blanco;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+
+      .profile {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: -20%;
+        width: 100%;
+        display: block;
+
+        .imgBox {
+          position: relative;
+          height: 10rem;
+          width: 10rem;
+          margin: auto;
+          border-radius: 50%;
+          overflow: hidden;
+
+          img {
+            position: absolute;
+            height: 10rem;
+            width: 10rem;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+          }
+        }
+
+        h3 {
+          padding: 0.5rem 0;
+          margin-top: 0.5rem;
+          text-transform: uppercase;
+          font-size: 2.2rem;
+          font-weight: 500;
+          text-align: center;
+        }
+
+        .estrellas {
+          display: flex;
+          justify-content: center;
+          margin-top: 0.3rem;
+          img {
+            height: 3.5rem;
+            width: 3.5rem;
+          }
+        }
+      }
+
+      .opinion-texto {
+        margin-top: 10.5rem;
+        padding: 0 0.8rem;
+        font-size: 1.8rem;
+        text-align: center;
+      }
+
+      .social-media {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0.5rem;
+        margin-top: 2rem;
+
+        a img {
+          width: 3.5rem;
+          height: 3.5rem;
+        }
+
+        a:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
 }

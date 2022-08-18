@@ -1,0 +1,18 @@
+@use "base/variables" as v;
+
+.footer {
+  text-align: center;
+  width: 100%;
+
+  .texto {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 0.8rem 0;
+    font-weight: 600;
+    font-family: v.$fuente-raleway;
+
+    a {
+      color: v.$negro;
+    }
+  }
+}

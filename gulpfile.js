@@ -10,12 +10,12 @@ const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 
 // JavaScript 
-// const terser = require('gulp-terser-js');
+const terser = require('gulp-terser-js');
 
 //Imagenes
-// const imagemin = require('gulp-imagemin');
+const imagemin = require('gulp-imagemin');
+const cache = require('gulp-cache');
 // const webp = require('gulp-webp');
-// const cache = require('gulp-cache');
 // const avif = require('gulp-avif');
 
 function css(done) {
@@ -29,18 +29,18 @@ function css(done) {
   done();
 }
 
-// function minificarImagenes(done){
+function minificarImagenes(done){
 
-//   const opciones = {
-//     optimizationLevel: 3
-//   }
+  const opciones = {
+    optimizationLevel: 3
+  }
 
-//   src("src/images/**/*.{png,jpg,jpeg}")
-//   .pipe(cache(imagemin(opciones)))  
-//   .pipe(dest('build/images'))
+  src("src/images/**/*.{png,jpg,jpeg}")
+  .pipe(cache(imagemin(opciones)))  
+  .pipe(dest('build/images'))
 
-//   done();
-// }
+  done();
+}
 
 // function convertToWebp(done){
 
@@ -74,20 +74,20 @@ function dev(done) {
   done();
 }
 
-// function javascript(done){
-//   src('src/javascript/**/*.js')
-//   .pipe(sourcemaps.init())
-//   .pipe(terser())
-//   .pipe(sourcemaps.write('.'))
-//   .pipe(dest('build/javascript'));
+function js(done){
+  src('src/js/**/*.js')
+  .pipe(sourcemaps.init())
+  .pipe(terser())
+  .pipe(sourcemaps.write('.'))
+  .pipe(dest('build/js'));
 
-//   done();
-// }
+  done();
+}
 
 // exports.css = css;
-// exports.javascript = javascript;
-// exports.minificarImagenes = minificarImagenes;
 // exports.convertToWebp = convertToWebp;
 // exports.convertToAvif = convertToAvif;
+exports.js = js;
+exports.minificarImagenes = minificarImagenes;
 exports.dev = dev;
 

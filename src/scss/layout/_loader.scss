@@ -1,0 +1,43 @@
+@use "base/mixins" as m;
+@use "base/variables" as v;
+
+.contenedor-loader {
+  background-color: v.$blanco;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+
+  .loader {
+    border: .5rem solid v.$gris-claro;
+    border-top-color: v.$negro;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    @include m.tablet {
+      height: 6rem;
+      width: 6rem;
+    }
+
+    //animación girar
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+  }
+
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

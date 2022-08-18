@@ -1,0 +1,22 @@
+@use 'base/variables' as v;
+
+.btn-wsp{
+    position: fixed;
+    width: 5.5rem;
+    height: 5.5rem;
+    line-height: 5.5rem;
+    bottom: 2rem;
+    left: 2rem;
+    background-color: #25d366;
+    color: v.$blanco;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 3rem;
+    box-shadow: 0px .1rem 1rem rgba(0,0,0,.5);
+
+    &:hover{
+        text-decoration: none;
+        color: #25d366;
+        background-color: v.$blanco;
+    }
+}

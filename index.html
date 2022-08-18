@@ -19,16 +19,22 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- Link Icono Pestaña -->
-    <link rel="icon" href="src/images/iconos/icono-nitido.png">
+    <link rel="icon" href="build/images/iconos/icono-nitido.png">
     <!-- Animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Loader inicio -->
+    <div class="contenedor-loader">
+        <div class="loader"></div>
+    </div>
+    <!-- Loader fin -->
+
     <!-- Header inicio -->
     <header class="header">
         <a href="index.html" class="logo">
-            <img src="src/images/iconos/icono-nitido.png" alt="Logo de nitido impresiones">
+            <img src="build/images/iconos/icono-nitido.png" alt="Logo de nitido impresiones">
             <h1>Nitido<span>Impresiones</span></h1>
         </a>
 
@@ -36,38 +42,37 @@
         <div id="menu-btn" class="fa-solid fa-bars-staggered"></div>
 
         <div class="navegacion">
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Catálogo</a>
-            <a href="#">Opiniones</a>
-            <a href="#">Contacto</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#opiniones">Opiniones</a>
+            <a href="#contacto">Contacto</a>
         </div>
     </header>
     <!-- Header fin -->
 
     <!-- Hero inicio -->
-    <section class="hero">
+    <section class="hero" id="inicio">
 
-        <div class="sombra">
-            <div class="hero-contenido">
-                <h2 data-aos="zoom-in" data-aos-duration="1000">Artículos para vos y tu emprendimiento</h2>
-                <a href="#" class="button" data-aos="zoom-in" data-aos-duration="1000">Empezar</a>
-            </div>
+        <div class="hero-contenido">
+            <h2 data-aos="zoom-in" data-aos-duration="1500">Artículos para vos y tu emprendimiento</h2>
+            <a class="button">Empezar</a>
         </div>
 
     </section>
     <!-- Hero fin -->
 
     <!-- Nosotros inicio -->
-    <section class="nosotros" data-aos="zoom-in-up" data-aos-duration="2000">
+    <section class="nosotros" id="nosotros" data-aos="zoom-in-up" data-aos-duration="1700">
         <div class="grid">
             <div class="imagen">
-                <img src="src/images/iconos/icono-nitido.png" alt="Imagen logo de nitido impresiones">
+                <img src="build/images/iconos/icono-nitido.png" alt="Imagen logo de nitido impresiones">
             </div>
             <div class="texto">
                 <h3>Sobre nosotros</h3>
                 <p>
-                    Somos un emprendimiento ubicado en Lomas de Tafi, Tucumán. Contamos con año y medio de experiencia
+                    Somos un emprendimiento ubicado en Lomas de Tafi, Tucumán. Contamos con dos años y medio de
+                    experiencia
                     en
                     el rubro, y vamos por mucho más. Hacemos todo tipo de impresiones. Fotografía, Polaroid y varios
                     formatos
@@ -77,14 +82,14 @@
                     ¡No olvides seguirnos en nuestras redes sociales donde subimos nuestros trabajos y avisos!
                 </p>
                 <div class="redes-sociales">
-                    <a href="https://wa.me/c/5493814198699" target="_blank"><img src="src/images/iconos/whatsapp.png"
+                    <a href="https://wa.me/c/5493814198699" target="_blank"><img src="build/images/iconos/whatsapp.png"
                             alt="Icono de whatsapp"></a>
                     <a href="https://www.instagram.com/nitido.impresiones/" target="_blank"><img
-                            src="src/images/iconos/instagram.png" alt="Icono de instagram"></a>
+                            src="build/images/iconos/instagram.png" alt="Icono de instagram"></a>
                     <a href="https://www.facebook.com/nitido.impresiones.7" target="_blank"><img
-                            src="src/images/iconos/facebook.png" alt="Icono de facebook"></a>
+                            src="build/images/iconos/facebook.png" alt="Icono de facebook"></a>
                     <a href="https://www.tiktok.com/@nitido.impresiones?_t=8UamgmUkzLB&_r=1" target="_blank"><img
-                            src="src/images/iconos/tiktok.png" alt="Icono de tiktok"></a>
+                            src="build/images/iconos/tiktok.png" alt="Icono de tiktok"></a>
                 </div>
             </div>
         </div>
@@ -92,114 +97,99 @@
     <!-- Nosotros fin -->
 
     <!-- Catalogo inicio-->
-    <section class="catalogo">
+    <section class="catalogo" id="catalogo">
 
         <h2>Algunos de nuestros productos</h2>
 
         <div class="grid">
             <div class="producto">
-                <img class="filtro" src="src/images/productos/agenda.jpeg" alt="">
+                <img class="filtro" src="build/images/productos/agenda.jpeg" alt="Imagen de agenda">
                 <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut rerum dolorem, maxime
-                        quisquam velit aspernatur culpa.</p>
+                    <p>Agenda</p>
                 </div>
             </div>
             <div class="producto">
-                <img class="filtro" src="src/images/productos/anotador.jpeg" alt="">
+                <img class="filtro" src="build/images/productos/anotador.jpeg" alt="Imagen de anotador">
                 <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut rerum dolorem, maxime
-                        quisquam velit aspernatur culpa.</p>
+                    <p>Anotador</p>
                 </div>
             </div>
             <div class="producto">
-                <img class="filtro" src="src/images/productos/combos.jpeg" alt="">
+                <img class="filtro" src="build/images/productos/combos.jpeg" alt="Imagen de combo">
                 <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut rerum dolorem, maxime
-                        quisquam velit aspernatur culpa.</p>
+                    <p>Combos</p>
                 </div>
             </div>
             <div class="producto">
-                <img class="filtro" src="src/images/productos/etiquetas.jpg" alt="">
+                <img class="filtro" src="build/images/productos/etiquetas.jpg" alt="Imagen de etiqueta">
                 <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut rerum dolorem, maxime
-                        quisquam velit aspernatur culpa.</p>
+                    <p>Etiqueta</p>
                 </div>
             </div>
             <div class="producto">
-                <img class="filtro" src="src/images/productos/mini-square.jpeg" alt="">
+                <img class="filtro" src="build/images/productos/mini-square.jpeg" alt="Imagen de mini square">
                 <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut rerum dolorem, maxime
-                        quisquam velit aspernatur culpa.</p>
+                    <p>Mini square</p>
                 </div>
             </div>
             <div class="producto">
-                <img class="filtro" src="src/images/productos/fotografia-comun.jpeg" alt="">
+                <img class="filtro" src="build/images/productos/fotografia-comun.jpeg" alt="Imagen de fotografía común">
                 <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut rerum dolorem, maxime
-                        quisquam velit aspernatur culpa.</p>
+                    <p>Fotografía común</p>
                 </div>
             </div>
             <div class="producto">
-                <img class="filtro" src="src/images/productos/polaroid.jpeg" alt="">
+                <img class="filtro" src="build/images/productos/polaroid.jpeg" alt="Imagen de fotografía polaroid">
                 <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut rerum dolorem, maxime
-                        quisquam velit aspernatur culpa.</p>
+                    <p>Polaroid</p>
                 </div>
             </div>
             <div class="producto">
-                <img class="filtro" src="src/images/productos/portarretratos.jpg" alt="">
+                <img class="filtro" src="build/images/productos/portarretratos.jpg" alt="Imagen de portarretratos">
                 <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut rerum dolorem, maxime
-                        quisquam velit aspernatur culpa.</p>
+                    <p>Portarretratos</p>
                 </div>
             </div>
             <div class="producto">
-                <img class="filtro" src="src/images/productos/square.jpeg" alt="">
+                <img class="filtro" src="build/images/productos/square.jpeg" alt="Imagen de fotografía tipo square">
                 <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut rerum dolorem, maxime
-                        quisquam velit aspernatur culpa.</p>
+                    <p>Square</p>
                 </div>
             </div>
             <div class="producto">
-                <img class="filtro" src="src/images/productos/sticker.jpg" alt="">
+                <img class="filtro" src="build/images/productos/sticker.jpg" alt="Imagen de sticker">
                 <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut rerum dolorem, maxime
-                        quisquam velit aspernatur culpa.</p>
+                    <p>Sticker</p>
                 </div>
             </div>
             <div class="producto">
-                <img class="filtro" src="src/images/productos/strips.jpeg" alt="">
+                <img class="filtro" src="build/images/productos/strips.jpeg" alt="Imagen de strips">
                 <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut rerum dolorem, maxime
-                        quisquam velit aspernatur culpa.</p>
+                    <p>Strips</p>
                 </div>
             </div>
             <div class="producto">
-                <img class="filtro" src="src/images/productos/tarjeta.jpeg" alt="">
+                <img class="filtro" src="build/images/productos/iman.jpeg" alt="Imagen de imán">
                 <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut rerum dolorem, maxime
-                        quisquam velit aspernatur culpa.</p>
+                    <p>Imán</p>
                 </div>
             </div>
             <div class="producto">
-                <img class="filtro" src="src/images/productos/fixture.jpeg" alt="">
+                <img class="filtro" src="build/images/productos/tarjeta.jpeg" alt="Imagen de tarjeta">
                 <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut rerum dolorem, maxime
-                        quisquam velit aspernatur culpa.</p>
+                    <p>Tarjeta</p>
                 </div>
             </div>
             <div class="producto">
-                <img class="filtro" src="src/images/productos/vinilo-transparente.jpeg" alt="">
+                <img class="filtro" src="build/images/productos/fixture.jpeg" alt="Imagen de fixture mundial qatar 2022">
                 <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut rerum dolorem, maxime
-                        quisquam velit aspernatur culpa.</p>
+                    <p>Fixture</p>
                 </div>
             </div>
             <div class="producto">
-                <img class="filtro" src="src/images/productos/iman.jpeg" alt="">
+                <img class="filtro" src="build/images/productos/vinilo-transparente.jpeg" alt="Imagen de vinilo transparente">
                 <div class="contenido">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ut rerum dolorem, maxime
-                        quisquam velit aspernatur culpa.</p>
+                    <p>Vinilo transparente</p>
                 </div>
             </div>
         </div>
@@ -208,13 +198,157 @@
     <!-- Catalogo fin-->
 
     <!-- Opiniones inicio -->
-    <section class="opiniones">
-
+    <section class="opiniones" data-aos="fade-up" data-aos-duration="1500" id="opiniones">
+        <h2>Lo que opinan nuestros clientes</h2>
+        <div class="wrapper">
+            <div class="container">
+                <div class="profile">
+                    <div class="imgBox">
+                        <img src="src/images/personas/benjamin.jpeg" alt="">
+                    </div>
+                    <h3>Benjamín Rubio</h3>
+                    <div class="estrellas">
+                        <img src="build/images/iconos/estrella.png" alt="icono de estrella">
+                        <img src="build/images/iconos/estrella.png" alt="icono de estrella">
+                        <img src="build/images/iconos/estrella.png" alt="icono de estrella">
+                        <img src="build/images/iconos/estrella.png" alt="icono de estrella">
+                        <img src="build/images/iconos/estrella.png" alt="icono de estrella">
+                    </div>
+                </div>
+                <p class="opinion-texto">"Muy buena calidad de los productos! El tiempo de entrega fue rapidísimo. 
+                    La agenda personalizada la uso todos los días!".</p>
+            </div>
+            <div class="container">
+                <div class="profile">
+                    <div class="imgBox">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <h3>Richard Howard</h3>
+                    <div class="estrellas">
+                        <img src="build/images/iconos/estrella.png" alt="icono de estrella">
+                        <img src="build/images/iconos/estrella.png" alt="icono de estrella">
+                        <img src="build/images/iconos/estrella.png" alt="icono de estrella">
+                        <img src="build/images/iconos/estrella.png" alt="icono de estrella">
+                        <img src="build/images/iconos/estrella.png" alt="icono de estrella">
+                    </div>
+                </div>
+                <p class="opinion-texto">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque quisquam
+                    laborum Ratione,
+                    autem quia vel dolorem consectetur".</p>
+            </div>
+            <div class="container">
+                <div class="profile">
+                    <div class="imgBox">
+                        <img src="build/images/personas/owen.jpeg" alt="">
+                    </div>
+                    <h3>Owen Vassarotto</h3>
+                    <div class="estrellas">
+                        <img src="build/images/iconos/estrella.png" alt="icono de estrella">
+                        <img src="build/images/iconos/estrella.png" alt="icono de estrella">
+                        <img src="build/images/iconos/estrella.png" alt="icono de estrella">
+                        <img src="build/images/iconos/estrella.png" alt="icono de estrella">
+                        <img src="build/images/iconos/estrella.png" alt="icono de estrella">
+                    </div>
+                </div>
+                <p class="opinion-texto">"Compré 250 folletos en papel fotográfico, y la verdad que lo volvería a hacer.
+                    Excelente calidad del producto y muy buena la atención".</p>
+            </div>
+        </div>
     </section>
     <!-- Opiniones fin -->
 
+    <!-- Contacto inicio -->
+    <section class="contacto" id="contacto">
+        <div class="contenido">
+            <div class="titulo">Consultanos<img src="build/images/iconos/manito.png" alt="imagen de manito"></div>
+
+            <div class="contenedor">
+                <div class="contacto-informacion">
+                    <div class="box">
+                        <div class="icono"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="texto">
+                            <h3>Dirección</h3>
+                            <p>Lomas de Tafí, Tucumán</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icono"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div class="texto">
+                            <h3>WhatsApp</h3>
+                            <p>+54 9 3814 19-8699</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icono"><i class="fa-solid fa-at"></i></i></div>
+                        <div class="texto">
+                            <h3>Email</h3>
+                            <p>luksdesigntuc@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icono"><a href="https://www.instagram.com/nitido.impresiones/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></div>
+                        <div class="texto">
+                            <h3>Instagram</h3>
+                            <a href="https://www.instagram.com/nitido.impresiones/"
+                                target="_blank">nitido.impresiones</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icono"><a href="https://www.facebook.com/nitido.impresiones.7" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a></div>
+                        <div class="texto">
+                            <h3>Facebook</h3>
+                            <a href="https://www.facebook.com/nitido.impresiones.7" target="_blank">Nitido
+                                Impresiones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formulario">
+                    <h3>Envíanos un mensaje</h3>
+                    <form name="contacto-nitido" method="POST" data-netlify="true">
+
+                        <div class="input">
+                            <label for="nombre">Nombre:</label>
+                            <input required="required" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        </div>
+
+                        <div class="input">
+                            <label for="email">Email:</label>
+                            <input required="required" type="email" name="email" id="email" placeholder="Email">
+                        </div>
+
+                        <div class="input">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea required="required" name="mensaje" id="mensaje"
+                                placeholder="Escribe tu mensaje..."></textarea>
+                        </div>
+
+                        <div class="input">
+                            <input type="submit" value="Enviar" id="boton-contacto" class="boton-contacto">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contacto fin -->
+
+    <!-- Boton flotante whatsapp inicio -->
+    <a href="https://api.whatsapp.com/send?phone=5493814198699" class="btn-wsp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!-- Boton flotante whatsapp fin -->
+
+    <!-- Footer inicio -->
+    <footer class="footer">
+        <div class="texto">Sitio web creado por <a href="#">owenvassarotto.com</a></div>
+    </footer>
+    <!-- Footer fin -->
+
     <!-- Script -->
-    <script src="src/js/app.js"></script>
+    <script src="build/js/app.js"></script>
     <!-- Font Awesome script -->
     <script src="https://kit.fontawesome.com/9221d47465.js" crossorigin="anonymous"></script>
     <!-- Animaciones script -->

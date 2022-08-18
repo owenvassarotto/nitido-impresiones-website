@@ -5,19 +5,25 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px
 }
-* {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
-  transition: all 0.3s linear;
+}
+
+* {
   margin: 0;
   padding: 0;
+  outline: none;
+  transition: all 0.3s linear;
 }
 
 body {
-    font-family: v.$fuente-montserrat;
+  font-family: v.$fuente-montserrat;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 h1 {
@@ -37,6 +43,6 @@ p {
   font-size: 2rem;
 }
 
-img{
-    width: 20rem;
+img {
+  width: 20rem;
 }

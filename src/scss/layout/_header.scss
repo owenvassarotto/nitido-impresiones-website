@@ -16,7 +16,7 @@
 
   &.hd-activo {
     background-color: v.$negro;
-
+    
     .logo h1{
       color:v.$blanco;
     }
@@ -34,10 +34,6 @@
     display: flex;
     align-items: center;
 
-    &:hover {
-      transform: scale(1.05);
-    }
-
     img {
       width: 6rem;
       height: 6rem;
@@ -46,6 +42,7 @@
     h1 {
       font-size: 2.5rem;
       color: v.$negro;
+      font-weight: 600;
 
       span {
         font-weight: 400;
@@ -61,6 +58,7 @@
       font-size: 2rem;
       font-weight: 500;
       color: v.$negro;
+      transition: all .1s linear;
 
       &:hover {
         transform: scale(1.05);
@@ -91,6 +89,7 @@
 
 @include m.tablet {
   .header {
+
     #menu-btn {
       display: inline-block;
 
