@@ -1,2 +1,2 @@
 # nitidoimpresiones
-Proyecto página web de nitido impresiones
+Proyecto página web de nítido impresiones
