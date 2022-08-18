@@ -5,13 +5,14 @@
   width: 100%;
 
   .texto {
-    text-transform: uppercase;
     font-size: 1.5rem;
-    padding: 0.8rem 0;
+    padding: 0.8rem 2%;
     font-weight: 600;
     font-family: v.$fuente-raleway;
+    color: v.$negro;
+    line-height: 1.5;
 
-    a {
+    a{
       color: v.$negro;
     }
   }
