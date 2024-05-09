@@ -2,6 +2,8 @@
 const navegacion = document.querySelector(".header .navegacion");
 const btnMenu = document.querySelector(".header #menu-btn");
 const enlaces = document.querySelectorAll(".header .navegacion a");
+// Setear el año actual al span del footer
+const footerYear = document.getElementById("year").textContent = new Date().getFullYear();
 
 cargarEventos();
 // Función para llamar a los eventos
@@ -74,3 +76,4 @@ function ocultarBtnWsp(){
     }
   });
 }
+
