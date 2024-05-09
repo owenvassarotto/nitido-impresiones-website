@@ -2,6 +2,8 @@
 
 Bienvenido al repositorio de la landing page de Nitido Impresiones, un proyecto desarrollado como parte de mi aprendizaje inicial en HTML, CSS, SCSS y JavaScript.
 
+**Live Demo**: [nitidoimpresiones.com](https://nitidoimpresiones.netlify.app/)
+
 ## Descripción
 
 Este repositorio alberga el código fuente de una página web destinada a destacar los servicios de impresión proporcionados por Nitido Impresiones. Su enfoque radica en presentar de manera atractiva los servicios, productos y canales de contacto de la empresa.
@@ -22,9 +24,9 @@ Este repositorio alberga el código fuente de una página web destinada a destac
 - Gulp.js
 - JavaScript
 
-## Capturas de Pantalla
+## Vista Previa
 
-_Insertar aquí capturas de pantalla_
+![Nítido Impresiones Landing Page](https://github.com/owenvassarotto/nitido-impresiones-website/assets/110845731/a6592817-b005-4667-9da4-709f03e6c3e5)
 
 ## Instalación y Uso
 
